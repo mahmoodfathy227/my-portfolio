@@ -295,7 +295,7 @@ section {
 
 .details-container {
   padding: 1.5rem;
-  flex: 1;
+  flex: 2;
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
@@ -357,7 +357,7 @@ article .icon {
 
 #projects {
   position: relative;
-  min-height: 250vh;
+  min-height: 400vh;
 }
 
 .color-container {
