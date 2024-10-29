@@ -199,6 +199,12 @@ section {
   text-align: center;
 }
 
+.subtitle {
+  font-size: 0.8rem;
+  text-align: center;
+  color: red;
+}
+
 #socials-container {
   display: flex;
   justify-content: center;
@@ -425,7 +431,7 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-  height: 26vh;
+  height: 1ch;
   margin: 0 1rem;
 }
 
