@@ -156,6 +156,93 @@ section {
   min-height: fit-content;
 }
 
+/* SENIOR DEVELOPER BADGE */
+#senior-badge-section {
+  padding: 2rem 10rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: auto;
+  text-align: center;
+}
+
+.senior-badge-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.senior-badge {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 25px;
+  padding: 4rem 3rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  animation: badgeFloat 3s ease-in-out infinite;
+}
+
+@keyframes badgeFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.badge-icon {
+  font-size: 4rem;
+  animation: rocketPulse 2s ease-in-out infinite;
+}
+
+@keyframes rocketPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.badge-content {
+  text-align: center;
+}
+
+.badge-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 0.5rem 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.badge-subtitle {
+  font-size: 1.5rem;
+  color: #666;
+  margin: 0 0 1.5rem 0;
+  font-weight: 500;
+}
+
+.badge-stats {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.stat {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.stat:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
 /* STORES SECTION */
 #stores-section {
   padding: 2rem 10rem;
@@ -487,12 +574,26 @@ article .icon {
   border-color: rgb(163, 163, 163);
   transition: all 0.3s ease;
   margin: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
 }
 
 .project-btn:hover {
   background-color: rgb(163, 163, 163);
   color: white;
   transform: translateY(-2px);
+}
+
+.project-btn svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+
+.project-btn:hover svg {
+  transform: scale(1.1);
 }
 
 /* Technology buttons styling */

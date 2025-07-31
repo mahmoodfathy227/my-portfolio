@@ -45,6 +45,36 @@
     margin-top: 0;
   }
   
+  /* Senior badge responsive */
+  #senior-badge-section {
+    padding: 2rem 5%;
+  }
+  
+  .senior-badge {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+  
+  .badge-title {
+    font-size: 2.5rem;
+  }
+  
+  .badge-subtitle {
+    font-size: 1.3rem;
+  }
+  
+  .badge-stats {
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .stat {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+  
   /* Stores section responsive */
   #stores-section {
     padding: 2rem 5%;
@@ -149,6 +179,30 @@
   }
   .text-container {
     text-align: justify;
+  }
+  
+  /* Senior badge mobile responsive */
+  .senior-badge {
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+  
+  .badge-title {
+    font-size: 2rem;
+  }
+  
+  .badge-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .badge-stats {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .stat {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.8rem;
   }
   
   /* Stores section mobile responsive */
