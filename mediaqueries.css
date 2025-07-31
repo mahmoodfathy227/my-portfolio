@@ -6,7 +6,6 @@
   .about-containers {
     flex-wrap: wrap;
   }
-  #contact,
   #projects {
     height: fit-content;
   }
@@ -45,10 +44,61 @@
   .about-containers {
     margin-top: 0;
   }
+  
+  /* Stores section responsive */
+  #stores-section {
+    padding: 2rem 5%;
+  }
+  
+  .stores-title {
+    font-size: 2rem;
+  }
+  
+  .store-icons {
+    gap: 2rem;
+  }
+  
+  .store-icon {
+    min-width: 120px;
+    padding: 1rem;
+  }
+  
+  /* Project responsiveness for tablets */
+  .experience-details-container .about-containers {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .details-container.color-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .project-img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+  }
+  
+  /* Technology buttons responsive */
+  .details-container.color-container div[style*="display: flex"] {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  
+  .details-container.color-container div[style*="display: flex"] button {
+    font-size: 0.8rem !important;
+    padding: 8px 12px !important;
+    margin: 0.25rem !important;
+  }
+  
+
 }
 
 @media screen and (max-width: 600px) {
-  #contact,
   footer {
     height: 40vh;
   }
@@ -100,4 +150,178 @@
   .text-container {
     text-align: justify;
   }
+  
+  /* Stores section mobile responsive */
+  #stores-section {
+    padding: 1.5rem 5%;
+  }
+  
+  .stores-title {
+    font-size: 1.8rem;
+  }
+  
+  .advantage-highlight {
+    padding: 1rem;
+    margin: 1.5rem 0;
+  }
+  
+  .advantage-highlight p {
+    font-size: 1rem;
+  }
+  
+  .store-icons {
+    gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .store-icon {
+    min-width: 200px;
+    padding: 1.5rem;
+  }
+  
+  /* Mobile project responsiveness */
+  #projects {
+    min-height: auto;
+    padding-bottom: 2rem;
+  }
+  
+  /* Modal responsive */
+  .modal-content {
+    margin: 10% auto;
+    padding: 1.5rem;
+    width: 95%;
+  }
+  
+  .contact-info-upper-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-info-container {
+    margin: 0.5rem;
+  }
+  
+  /* Footer modal responsive */
+  .footer-modal-content {
+    max-width: 90%;
+    padding: 2.5rem 1.5rem;
+    margin: 0 auto;
+    min-height: 450px;
+  }
+  
+  .footer-button {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+  
+  .footer-button svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .footer-modal-body .nav-links li a {
+    font-size: 1.1rem;
+    padding: 1rem 1.5rem;
+  }
+  
+  .footer-modal-body nav {
+    margin-bottom: 4rem;
+  }
+  
+  .footer-modal-body p {
+    padding: 2rem 0 1rem 0;
+  }
+  
+  .footer-modal-body .nav-links {
+    gap: 1.5rem;
+  }
+  
+  .experience-details-container {
+    margin: 1rem 0;
+  }
+  
+  .experience-details-container .about-containers {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .details-container.color-container {
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+  }
+  
+  .project-img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+  
+  .project-title {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+  
+  .project-title img {
+    width: 30px !important;
+    height: 20px !important;
+    margin-left: 0.5rem;
+  }
+  
+  /* Technology buttons mobile optimization */
+  .details-container.color-container div[style*="display: flex"] {
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    justify-content: center;
+    padding: 10px !important;
+  }
+  
+  .details-container.color-container div[style*="display: flex"] button {
+    font-size: 0.7rem !important;
+    padding: 6px 10px !important;
+    margin: 0.1rem !important;
+    border-radius: 15px !important;
+    white-space: nowrap;
+  }
+  
+  /* Project buttons mobile optimization */
+  .details-container.color-container .btn-container {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .details-container.color-container .btn-container .btn {
+    width: 100%;
+    max-width: 200px;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Extra small devices */
+  .project-title {
+    font-size: 1rem;
+  }
+  
+  .details-container.color-container div[style*="display: flex"] button {
+    font-size: 0.6rem !important;
+    padding: 4px 8px !important;
+  }
+  
+  .details-container.color-container .btn-container .btn {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+  
+  .project-img {
+    max-height: 150px;
+  }
+  
+
 }
